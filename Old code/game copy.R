@@ -9,9 +9,9 @@ game <- function(N,T) {
 	
 	powers_vec <- c(32768, 16384, 8192, 4096, 2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1)
 	
-	stats       <- matrix(0,T/4,9)
+	stats       <- matrix(0,T/4,19)
 
-	mutate_prob <- .035
+	mutate_prob <- .01
 	
 	for (t in 1:T) {
 		#mutate_prob <- 1/(100*(t^(1/3)))
@@ -20,15 +20,8 @@ game <- function(N,T) {
 		
 		if (t/4 == floor(t/4)) {
 			stats[t/4,1] <- t
-			stats[t/4,2] <- sum((1-game_mat[,2]))/(2*N)
-			stats[t/4,3] <- num_alive/(2*N)
-			stats[t/4,4] <- sum(game_mat[,22]/(8*N))
-			stats[t/4,5] <- sum(game_mat[,6]/(2*N))
-			stats[t/4,6] <- sum(game_mat[,c(7,8,10,14)]/(8*N))
-			stats[t/4,7] <- sum(game_mat[,c(9,11,12,15,16,18)]/(12*N))
-			stats[t/4,8] <- sum(game_mat[,c(13,17,19,20)]/(8*N))
-			stats[t/4,9] <- sum(game_mat[,21]/(2*N))
-			# stats[t/4,3:19] <- colSums(game_mat[,6:22])/(2*N)
+			stats[t/4,2] <- sum(game_mat[,2])/(2*N)
+			stats[t/4,3:19] <- colSums(game_mat[,6:22])/(2*N)
 			# print(sum(game_mat[,2])/(2*N))
 			# print(table(colSums(powers_vec*t(game_mat[,6:21]))))	
 		}
@@ -76,6 +69,6 @@ game <- function(N,T) {
 	#print(2*N-num_alive)
 	print(game_mat)
 	
-	print(stats)
-	#write.table(stats,file="C:\\Users\\E1RWS01\\Documents\\R\\Data\\data8",sep=",")
+	#print(stats)
+	write.table(stats,file="/Users/robertsharp/Dropbox/RA/R/Evolution Game/Data/data",sep=",")
 }

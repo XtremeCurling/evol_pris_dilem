@@ -19,7 +19,7 @@ mutate <- function(players) {
 	}
 	else if (player[22] == 1) {
 		anomalies <- abs(player[14]-player[13])
-		is_devolve <- rnd[2] < (first_evol/(2^(2*anomalies)))
+		is_devolve <- rnd[2] < (first_evol/(2^anomalies))
 		gene <- floor(4*rnd[1])
 		if (is_devolve == 0) {
 			player[(6 + 4*(2-is_evolve)*floor(gene/(2-is_evolve))):(9 + 4*(1-is_evolve) + 4*(2-is_evolve)*floor(gene/(2-is_evolve)))] <- 1 - player[(6 + 4*(2-is_evolve)*floor(gene/(2-is_evolve))):(9 + 4*(1-is_evolve) + 4*(2-is_evolve)*floor(gene/(2-is_evolve)))]
@@ -32,7 +32,7 @@ mutate <- function(players) {
 	}
 	else if (player[22] == 2) {
 		anomalies <- abs(player[10]-player[9]) + abs(player[18]-player[17])
-		is_devolve <- rnd[2] < (first_evol/(2^(2*anomalies)))
+		is_devolve <- rnd[2] < (first_evol/(2^anomalies))
 		gene <- floor(8*rnd[1])
 		if (is_devolve == 0) {
 			player[(6 + 2*(2-is_evolve)*floor(gene/(2-is_evolve))):(7 + 2*(1-is_evolve) + 2*(2-is_evolve)*floor(gene/(2-is_evolve)))] <- 1 - player[(6 + 2*(2-is_evolve)*floor(gene/(2-is_evolve))):(7 + 2*(1-is_evolve) + 2*(2-is_evolve)*floor(gene/(2-is_evolve)))]
@@ -46,7 +46,7 @@ mutate <- function(players) {
 	}
 	else if (player[22] == 3) {
 		anomalies <- abs(player[8]-player[7]) + abs(player[12]-player[11]) + abs(player[16]-player[15]) + abs(player[20]-player[19])
-		is_devolve <- rnd[2] < (first_evol/(2^(2*anomalies)))
+		is_devolve <- rnd[2] < (first_evol/(2^anomalies))
 		if (is_devolve == 0) {
 			gene <- floor(16*rnd[1])
 			player[(6 + (2-is_evolve)*floor(gene/(2-is_evolve))):(7-is_evolve + (2-is_evolve)*floor(gene/(2-is_evolve)))] <- 1 - player[(6 + (2-is_evolve)*floor(gene/(2-is_evolve))):(7-is_evolve + (2-is_evolve)*floor(gene/(2-is_evolve)))]
@@ -63,7 +63,7 @@ mutate <- function(players) {
 	}
 	else {
 		anomalies <- abs(player[7]-player[6]) + abs(player[9]-player[8]) + abs(player[11]-player[10]) + abs(player[13]-player[12]) + abs(player[15]-player[14]) + abs(player[17]-player[16]) + abs(player[19]-player[18]) + abs(player[21]-player[20])
-		is_devolve <- rnd[2] < (first_evol/(2^(2*anomalies)))
+		is_devolve <- rnd[2] < (first_evol/(2^anomalies))
 		if (is_devolve == 0) {
 			gene <- floor(16*rnd[1])
 			player[6 + gene] <- 1 - player[6 + gene]

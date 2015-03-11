@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  24 FEB 2015 13:55
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  1 MAR 2015 13:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -390,16 +390,16 @@ ftex.map}] [2] [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 209.
 
 [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 209.
  (./evol_resource.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 209.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 209.
 Package rerunfilecheck Info: File `evol_resource.out' has not changed.
 (rerunfilecheck)             Checksum: 56A8D13372D5082D6622365552EE9688;164.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 207.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 209.
  ) 
 Here is how much of TeX's memory you used:
  6867 strings out of 493315
@@ -408,7 +408,7 @@ Here is how much of TeX's memory you used:
  10087 multiletter control sequences out of 15000+600000
  12053 words of font info for 47 fonts, out of 8000000 for 9000
  1118 hyphenation exceptions out of 8191
- 34i,12n,32p,1227b,342s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,32p,1227b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -425,7 +425,7 @@ e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
 2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on evol_resource.pdf (5 pages, 184646 bytes).
+Output written on evol_resource.pdf (5 pages, 184739 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  89 compressed objects within 1 object stream

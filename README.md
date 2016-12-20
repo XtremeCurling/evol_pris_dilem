@@ -25,16 +25,19 @@ To get the scripts running in R, you must:
 * Download the `game_flexible_popn.R` and `play_flexible_popn.R` scripts from this repository.
 * In R, source these two scripts:
   - On Windows, something like
+  
     ```
     source("C:\\Users\\yourusername\\Desktop\\game_flexible_popn.R")
     source("C:\\Users\\yourusername\\Desktop\\play_flexible_popn.R")
     ```
   - On Mac, something like
+  
     ```
     source("/Users/yourusername/Desktop/game_flexible_popn.R")
     source("/Users/yourusername/Desktop/play_flexible_popn.R")
     ```
 * Then call the `game_flexible_popn()` function:
+
   ```
   game_stats <- game_flexible_popn(T = 1000)
   ```
